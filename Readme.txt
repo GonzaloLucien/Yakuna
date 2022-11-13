@@ -1,6 +1,3 @@
-Thanks for downloading this template!
+Thanks for visit this page!
 
-Template Name: Squadfree
-Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Author: Gonzalo Lucien Dominguez
