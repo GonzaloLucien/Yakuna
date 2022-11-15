@@ -378,7 +378,7 @@ section {
 }
 
 .section-bg {
-  background: linear-gradient(rgba(218, 243, 255, 0.8), rgba(103, 176, 209, 0.8));
+  background: linear-gradient(rgba(224, 244, 253, 0.8), rgba(119, 182, 212, 0.705));
 }
 
 .section-title {
@@ -463,7 +463,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center no-repeat;
+  background: url("../img/about-bg1.jpg") center center no-repeat;
   background-size: cover;
   padding: 120px 0;
   position: relative;
@@ -476,7 +476,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.781);
   z-index: 9;
 }
 
@@ -610,7 +610,7 @@ section {
 
 .team .member .social i {
   font-size: 16px;
-  margin: 0 2px;
+  margin: 0 8px;
 }
 
 @media (max-width: 992px) {
@@ -636,9 +636,32 @@ section {
   margin: 0 20px 0 20px;
 }
 
+#advisors .member .social i {
+  font-size: 16px;
+  margin: 0 4px 0 2px;
+}
+
 /*--------------------------------------------------------------
-# Features
+# Problem
 --------------------------------------------------------------*/
+.features img {
+  max-height: 90%;
+  border-radius: 15px;
+}
+
+#problem h2 {
+  margin: 25px 0;
+}
+
+#problem p {
+  font-size: 25px;
+  margin: 23px 0;
+}
+
+#problem #p-final {
+  margin-bottom: 0;
+}
+
 .features .content+.content {
   margin-top: 100px;
 }
@@ -669,8 +692,13 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Our products
 --------------------------------------------------------------*/
+.services .section-title p {
+  font-size: 25px;
+  margin: 23px 0;
+}
+
 .services .icon-box {
   padding: 30px;
   position: relative;
@@ -701,6 +729,10 @@ section {
 }
 
 .services .icon {
+  display:flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   margin-bottom: 15px;
 }
 
@@ -713,8 +745,8 @@ section {
 
 .services .title {
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin: 0 0 0 15px;
+  font-size: 20px;
 }
 
 .services .title a {
@@ -722,7 +754,8 @@ section {
 }
 
 .services .description {
-  font-size: 15px;
+  text-align: center;
+  font-size: 17px;
   line-height: 28px;
   margin-bottom: 0;
 }
@@ -735,6 +768,11 @@ section {
 .services .icon-box:hover .icon i {
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Products
+--------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 # Cta
