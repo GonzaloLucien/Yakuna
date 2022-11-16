@@ -783,18 +783,45 @@ section {
   background: linear-gradient(rgba(103, 176, 209, 0.8), rgba(103, 176, 209, 0.8)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
+  object-fit: cover;
+  overflow: visible;
 }
 
-.cta h3 {
+.cta .container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.cta h2 {
   color: #fff;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
 }
 
-.cta p {
-  color: #fff;
+.cta h4 {
+  color: #213b52;
+  padding-bottom: 20px;
 }
 
+.cta .text-center {
+  position: relative;
+}
+
+#png-container {
+  width: 35%;
+  height: 100%;
+  overflow: visible;
+}
+
+#filter-png {
+  width: 500px;
+  margin-top: -260px;
+  position: relative;
+  filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+  overflow: visible;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
