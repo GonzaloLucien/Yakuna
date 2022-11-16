@@ -653,7 +653,7 @@ section {
   margin: 25px 0;
 }
 
-#problem p {
+.features p {
   font-size: 25px;
   margin: 23px 0;
 }
@@ -679,12 +679,13 @@ section {
 
 .features .content ul li {
   padding-bottom: 10px;
+  font-size: 20px;
 }
 
 .features .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #fdc134;
+  color: rgba(103, 176, 209, 0.8);
 }
 
 .features .content p:last-child {
@@ -774,6 +775,7 @@ section {
 --------------------------------------------------------------*/
 
 
+
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -792,26 +794,6 @@ section {
 .cta p {
   color: #fff;
 }
-
-.cta .cta-btn {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 25px;
-  transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  color: #fff;
-}
-
-.cta .cta-btn:hover {
-  border-color: #fff;
-}
-
 
 /*--------------------------------------------------------------
 # Contact
