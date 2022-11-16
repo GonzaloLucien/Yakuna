@@ -770,6 +770,9 @@ section {
   color: #fff;
 }
 
+.services .col-md-12 {
+  justify-content: center;
+}
 /*--------------------------------------------------------------
 # Products
 --------------------------------------------------------------*/
@@ -791,7 +794,8 @@ section {
   display: flex;
   align-items: center;
   position: relative;
-  justify-content: flex-end;
+  justify-content: center;
+  min-height: 100px;
 }
 
 .cta h2 {
@@ -806,7 +810,7 @@ section {
 }
 
 .cta .text-center {
-  position: relative;
+  position: absolute;
 }
 
 #png-container {
@@ -818,9 +822,16 @@ section {
 #filter-png {
   width: 500px;
   margin-top: -260px;
+  right: -25vw;
   position: relative;
   filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
   overflow: visible;
+}
+
+@media (max-width: 990px) {
+  #png-container {
+    display: none;
+  }
 }
 /*--------------------------------------------------------------
 # Contact
