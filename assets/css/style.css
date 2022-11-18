@@ -40,6 +40,7 @@ p {
 section {
   margin: 0;
 }
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -100,18 +101,6 @@ section {
 #header.header-scrolled {
   background: rgba(55, 142, 181, 0.9);
   padding: 12px;
-}
-
-#header .logo a h1 {
-  align-self: center;
-  font-size: 24px;
-  margin: 0;
-  margin-left: 12px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
-  filter: drop-shadow(0px 0px 10px rgb(44, 44, 44));
 }
 
 #header .logo img {
@@ -293,7 +282,7 @@ section {
   z-index: 1;
 }
 
- #hero {
+#hero {
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -301,7 +290,7 @@ section {
   margin-bottom: -90px;
 }
 
- #hero .hero-container {
+#hero .hero-container {
   position: absolute;
   bottom: 0;
   top: 0;
@@ -315,10 +304,10 @@ section {
 }
 
 #hero img {
-  margin: 0 0 10px 0;
-  max-width: 300px;
-  line-height: 56px;
-  color: #fff;
+  align-self: center;
+  padding: 0;
+  margin-bottom: 20px;
+  max-height: 60px;
   filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
 }
 
@@ -384,6 +373,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .section-title h2 {
@@ -487,6 +477,11 @@ section {
 
 .about .content {
   padding: 30px 30px 30px 0;
+  margin-top: 0;
+}
+
+.about .content .col-xl-7 {
+  margin-top: 0;
 }
 
 .about .content h3 {
@@ -494,13 +489,14 @@ section {
   font-size: 34px;
   color: #2f4d5a;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .about .content p {
   margin-bottom: 30px;
 }
 
-#about .col-xl-6 {
+.about .col-xl-6 {
   padding: 0 10px 10px 10px;
 }
 
@@ -509,7 +505,7 @@ section {
 }
 
 .about .icon-boxes .icon-box i {
-  font-size: 40px;
+  font-size: 30px;
   color: #67b0d1;
   margin-bottom: 10px;
 }
@@ -622,6 +618,10 @@ section {
 /*--------------------------------------------------------------
 # Advisors
 --------------------------------------------------------------*/
+#advisors {
+  padding-top: 0;
+}
+
 #advisors .member .member-info {
   max-height: 120px;
   overflow: hidden;
@@ -647,6 +647,7 @@ section {
 .features img {
   max-height: 90%;
   border-radius: 15px;
+  box-shadow: 15px 15px 15px rgba(73, 78, 92, 0.411);
 }
 
 #problem h2 {
@@ -705,10 +706,11 @@ section {
   position: relative;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.274);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
+  min-height: 180px;
 }
 
 .services .icon-box::before {
@@ -730,7 +732,7 @@ section {
 }
 
 .services .icon {
-  display:flex;
+  display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -748,10 +750,7 @@ section {
   font-weight: 700;
   margin: 0 0 0 15px;
   font-size: 20px;
-}
-
-.services .title a {
-  color: #111;
+  color: #67b0d1;
 }
 
 .services .description {
@@ -759,9 +758,10 @@ section {
   font-size: 17px;
   line-height: 28px;
   margin-bottom: 0;
+  color: #213b52;
 }
 
-.services .icon-box:hover .title a,
+.services .icon-box:hover .title,
 .services .icon-box:hover .description {
   color: #fff;
 }
@@ -773,6 +773,7 @@ section {
 .services .col-md-12 {
   justify-content: center;
 }
+
 /*--------------------------------------------------------------
 # Products
 --------------------------------------------------------------*/
@@ -802,6 +803,7 @@ section {
   color: #fff;
   font-size: 32px;
   font-weight: 700;
+  filter: drop-shadow(-40px 0px 30px rgb(0, 0, 0));
 }
 
 .cta h4 {
@@ -824,7 +826,7 @@ section {
   margin-top: -260px;
   right: -25vw;
   position: relative;
-  filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+  filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.5));
   overflow: visible;
 }
 
@@ -833,6 +835,7 @@ section {
     display: none;
   }
 }
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -840,34 +843,77 @@ section {
   padding-bottom: 80px;
 }
 
-.contact .info-box {
-  color: #444444;
+
+.contact .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
   background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.616);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  min-height: 180px;
+  align-items: center;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 20px 0 30px 0;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
-.contact .info-box i {
+.contact .icon-box::before {
+  content: "";
+  position: absolute;
+  background: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.contact .icon-box:hover::before {
+  background: #2f4d5a;
+  top: 0;
+  border-radius: 0px;
+}
+
+.contact .icon-box i {
   font-size: 32px;
   color: #67b0d1;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #f0f7fa;
+  border: 2px #f0f7fa;
+  transition: all 0.3s ease-in-out;
 }
 
-.contact .info-box h3 {
+.contact .title {
   font-size: 20px;
   color: #777777;
   font-weight: 700;
   margin: 10px 0;
 }
 
-.contact .info-box p {
+.contact .description {
   padding: 0;
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+}
+
+.contact .icon-box:hover .title,
+.contact .icon-box:hover .description {
+  color: #fff;
+}
+
+.contact .icon-box:hover i {
+  color: #cfb53b;
+  font-size: 36px;
+  padding-bottom: 4px;
+}
+
+.contact .col-md-12 {
+  justify-content: center;
 }
 
 @-webkit-keyframes animate-loading {
