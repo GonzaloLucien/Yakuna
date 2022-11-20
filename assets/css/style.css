@@ -90,7 +90,7 @@ section {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 24px 0;
+  padding: 24px 10px;
   background: rgba(103, 176, 209, 0.8);
 }
 
@@ -100,15 +100,47 @@ section {
 
 #header.header-scrolled {
   background: rgba(55, 142, 181, 0.9);
-  padding: 12px;
+  padding: 12px 10px;
 }
 
-#header .logo img {
+#header .logo a {
+  justify-content: center;
+  align-items: center;
+}
+
+#header .logo a img {
   align-self: center;
-  padding: 0;
+  padding: 0 0 3px 0;
   margin: 0;
   max-height: 30px;
   filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+}
+
+#header .logo a img:hover {
+  transition: 0.3s;
+  max-height: 31px;
+}
+
+#header .logo a h2 {
+  display: none;
+  color: #fff;
+  text-align: center;
+  align-content: initial;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 0 10px;
+  filter: drop-shadow(-2px 0px 10px rgb(44, 44, 44));
+}
+
+#header.header-scrolled .logo a h2 {
+  display: flex;
+}
+
+#header.header-scrolled .logo a h2:hover {
+  transition: 0.2s;
+  color: #000000e0;
+  filter: drop-shadow(-2px 0px 10px rgb(255, 255, 255));
 }
 
 @media (max-width: 768px) {
@@ -166,6 +198,15 @@ section {
 .navbar .active:focus,
 .navbar li:hover>a {
   background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar a:hover {
+  font-size: 17px;
+  color: #8ec4dd;
+}
+
+.header-scrolled .navbar a:hover {
+  color: rgba(0, 0, 0, 0.74);
 }
 
 /**
@@ -555,7 +596,7 @@ section {
   background: #fff;
   padding: 20px 0;
   color: #2f4d5a;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.329);
   max-height: 95px;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
